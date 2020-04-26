@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MYTabBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGW-LQ-DqE">
+                                <rect key="frame" x="0.0" y="776" width="414" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="J83-qX-Bor">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odX-UX-gjV">
+                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="120"/>
+                                                <state key="normal" title="Tab 0" image="pencil.circle" catalog="system"/>
+                                                <state key="selected" image="pencil.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="didPressTabButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2as-s3-0Rj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbO-y7-elz">
+                                                <rect key="frame" x="141.5" y="0.0" width="131" height="120"/>
+                                                <state key="normal" title="Tab 1"/>
+                                                <connections>
+                                                    <action selector="didPressTabButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3R4-88-TV6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAO-qP-Pqu">
+                                                <rect key="frame" x="282.5" y="0.0" width="131.5" height="120"/>
+                                                <state key="normal" title="Tab 2"/>
+                                                <connections>
+                                                    <action selector="didPressTabButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3LA-Cn-Rlm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="EMq-T4-soU"/>
+                                    <constraint firstItem="J83-qX-Bor" firstAttribute="top" secondItem="fGW-LQ-DqE" secondAttribute="top" id="F9N-65-ZGq"/>
+                                    <constraint firstAttribute="trailing" secondItem="J83-qX-Bor" secondAttribute="trailing" id="dUO-Ug-A8j"/>
+                                    <constraint firstItem="J83-qX-Bor" firstAttribute="leading" secondItem="fGW-LQ-DqE" secondAttribute="leading" id="vSM-Z2-TdO"/>
+                                    <constraint firstAttribute="bottom" secondItem="J83-qX-Bor" secondAttribute="bottom" id="zyO-vq-TLc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1o-nD-URj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="776"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fGW-LQ-DqE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3XN-U3-boJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f1o-nD-URj" secondAttribute="trailing" id="J7u-RJ-9ab"/>
+                            <constraint firstItem="fGW-LQ-DqE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RJ3-Hm-yYU"/>
+                            <constraint firstItem="fGW-LQ-DqE" firstAttribute="top" secondItem="f1o-nD-URj" secondAttribute="bottom" id="Vtg-uO-Kk1"/>
+                            <constraint firstAttribute="bottom" secondItem="fGW-LQ-DqE" secondAttribute="bottom" id="i1j-eL-1mF"/>
+                            <constraint firstItem="f1o-nD-URj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qkk-tP-9Cc"/>
+                            <constraint firstItem="f1o-nD-URj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="s48-ic-xu8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="f1o-nD-URj" id="sXR-rv-Uko"/>
+                        <outletCollection property="buttons" destination="odX-UX-gjV" collectionClass="NSMutableArray" id="j41-FL-e8B"/>
+                        <outletCollection property="buttons" destination="QbO-y7-elz" collectionClass="NSMutableArray" id="a5g-V8-T6V"/>
+                        <outletCollection property="buttons" destination="VAO-qP-Pqu" collectionClass="NSMutableArray" id="mCF-nT-e8p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil.circle" catalog="system" width="64" height="60"/>
+        <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
