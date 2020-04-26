@@ -30,8 +30,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // set intial state
-        let button = self.buttons[selectedIndex]
-//        self.buttons[selectedIndex].isSelected = true
+        let button = self.buttons[self.selectedIndex]
         button.isSelected = true
         self.handleTap(button: button)
     }
@@ -42,7 +41,7 @@ class ViewController: UIViewController {
 
 }
 
-// MARK: button 1 actions
+// MARK: button action
 
 extension ViewController {
     
@@ -58,7 +57,7 @@ extension ViewController {
         previousVC.view.removeFromSuperview()
         previousVC.removeFromParent()
         
-    
+         // adding new view
         self.selectedIndex = button.tag
         button.isSelected = true
         let vc = viewControllers[self.selectedIndex]
