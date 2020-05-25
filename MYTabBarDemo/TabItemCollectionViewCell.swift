@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FLUtilities
 
 
 class TabItemCollectionViewCell: MyCollectionViewCell {
@@ -16,14 +17,14 @@ class TabItemCollectionViewCell: MyCollectionViewCell {
     @IBOutlet weak var highlightView: UIView!
     @IBOutlet weak var middleConstraint: NSLayoutConstraint!
     
+    var textSize: CGSize {
+        return self.titleLabel.intrinsicContentSize
+    }
+    
     override var isSelected: Bool {
         willSet {
             self.updateUI(isSelected: newValue)
         }
-    }
-    
-    var textSize: CGSize {
-        return self.titleLabel.intrinsicContentSize
     }
     
     override func awakeFromNib() {
@@ -34,8 +35,8 @@ class TabItemCollectionViewCell: MyCollectionViewCell {
         super.layoutSubviews()
         // dont call method diretly
         // use setNeedLayout() to force update
-//        print("layoutSubviews text size:", self.textSize)
-//        print("layoutSubviews text size:", self.titleLabel.text)
+        //        print("layoutSubviews text size:", self.textSize)
+        //        print("layoutSubviews text size:", self.titleLabel.text)
     }
     
     override func configure(_ item: Any?) {
@@ -44,7 +45,9 @@ class TabItemCollectionViewCell: MyCollectionViewCell {
     
     private func updateUI(isSelected: Bool) {
         self.titleLabel.text = isSelected ? "Label" : ""
-        self.highlightView.backgroundColor = isSelected ? .brown : .white
+        self.highlightView.backgroundColor = isSelected ?
+            UIColor(hexString: "ffa500") :
+            .white
         let width = self.textSize.width
         self.middleConstraint.constant = -width + 8.0
         UIView.animate(withDuration: 0.3) {

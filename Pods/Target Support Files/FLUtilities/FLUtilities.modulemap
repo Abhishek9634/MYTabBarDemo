@@ -1,0 +1,6 @@
+framework module FLUtilities {
+  umbrella header "FLUtilities-umbrella.h"
+
+  export *
+  module * { export * }
+}

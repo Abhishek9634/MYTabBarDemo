@@ -1,0 +1,22 @@
+{
+  "name": "FLUtilities",
+  "version": "0.1.0",
+  "summary": "A collection of helper libraries and tools for iOS by Fox Labs.",
+  "description": "A collection of helper libraries and tools for iOS by Fox Labs. It contains utility methods for various classes in iOS.",
+  "homepage": "https://github.com/Nickelfox/FLUtilities",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ravindra Soni": "soni@nickelfox.com"
+  },
+  "source": {
+    "git": "https://github.com/Nickelfox/FLUtilities.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Source/**/*"
+}
