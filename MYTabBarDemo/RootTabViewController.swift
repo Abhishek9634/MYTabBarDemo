@@ -35,6 +35,7 @@ class RootTabViewController: UITabBarController {
     func setTab() {
         self.tabBar.isHidden = true
 
+        // TAB
 //        Or you can change z position of tab bar this way:
 //        self.tabBar.layer.zPosition = -1
 //        and if you want to show it again then:
