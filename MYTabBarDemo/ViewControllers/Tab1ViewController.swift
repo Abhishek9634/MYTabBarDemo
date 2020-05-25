@@ -23,7 +23,7 @@ class Tab1ViewController: UIViewController {
     }
 
     @IBAction func changeView(_ sender: UIButton) {
-           self.rootVC?.selectedIndex = 1
+        
     }
     
 }

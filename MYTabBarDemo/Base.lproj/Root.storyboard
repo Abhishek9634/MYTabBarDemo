@@ -14,13 +14,56 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voW-2c-rAP">
+                                <rect key="frame" x="0.0" y="798" width="414" height="98"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MCN-r0-FGF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nYk-C1-Nag">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="MCN-r0-FGF" firstAttribute="leading" secondItem="y0V-wd-huh" secondAttribute="leading" id="W2a-B1-f1f"/>
+                                    <constraint firstItem="MCN-r0-FGF" firstAttribute="trailing" secondItem="y0V-wd-huh" secondAttribute="trailing" id="XAT-nh-jlP"/>
+                                    <constraint firstItem="MCN-r0-FGF" firstAttribute="top" secondItem="y0V-wd-huh" secondAttribute="top" id="k6a-cO-7b9"/>
+                                    <constraint firstItem="y0V-wd-huh" firstAttribute="bottom" secondItem="MCN-r0-FGF" secondAttribute="bottom" id="sTC-G2-BSR"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="y0V-wd-huh"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xe-VG-1WM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="798"/>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="voW-2c-rAP" firstAttribute="top" secondItem="5xe-VG-1WM" secondAttribute="bottom" id="3CW-SC-7RS"/>
+                            <constraint firstAttribute="bottom" secondItem="voW-2c-rAP" secondAttribute="bottom" id="OiQ-in-NvZ"/>
+                            <constraint firstItem="voW-2c-rAP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e79-bt-gJR"/>
+                            <constraint firstItem="voW-2c-rAP" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.12" id="kV3-W7-qnc"/>
+                            <constraint firstItem="5xe-VG-1WM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="m43-tu-xcp"/>
+                            <constraint firstItem="voW-2c-rAP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nNO-RF-ILo"/>
+                            <constraint firstItem="5xe-VG-1WM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tqR-PI-i2b"/>
+                            <constraint firstItem="5xe-VG-1WM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xgZ-QU-Yef"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="MCN-r0-FGF" id="1tS-fv-rvr"/>
+                        <outlet property="containerView" destination="5xe-VG-1WM" id="1uC-D1-Ov2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-697" y="-271"/>
+            <point key="canvasLocation" x="-697.10144927536237" y="-271.20535714285711"/>
         </scene>
     </scenes>
 </document>
