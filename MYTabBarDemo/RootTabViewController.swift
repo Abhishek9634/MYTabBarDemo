@@ -8,38 +8,53 @@
 
 import UIKit
 
-class RootTabViewController: UITabBarController {
-
+class RootTabViewController: UIViewController {
+    
+    @IBOutlet weak var containerView: UIView!
+    
     var tab1VC = Tab1ViewController.newInstance
     var tab2VC = Tab2ViewController.newInstance
     var tab3VC = Tab3ViewController.newInstance
     
-    override var selectedIndex: Int {
-        willSet {
-            //
-        }
-        didSet {
-            print(self.selectedIndex)
-        }
-    }
+    lazy var viewControllers: [UIViewController] = {
+        return [
+            self.tab1VC, self.tab2VC, self.tab3VC
+        ]
+    }()
+    
+    private var selectedIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setTab()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
     
-    func setTab() {
-        self.tabBar.isHidden = true
+}
 
-        // TAB
-//        Or you can change z position of tab bar this way:
-//        self.tabBar.layer.zPosition = -1
-//        and if you want to show it again then:
-//        self.tabBar.layer.zPosition = 0
+extension RootTabViewController {
+    
+    // vimp code do not delete
+    
+    private func updateView() {
+        let previousIndex = self.selectedIndex
+        
+//        REMOVE PREVIOUS VIEW
+        
+        let previousVC = self.viewControllers[previousIndex]
+        previousVC.willMove(toParent: nil)
+        previousVC.view.removeFromSuperview()
+        previousVC.removeFromParent()
+        
+        // ADD NEW VIEW
+        
+        let vc = self.viewControllers[self.selectedIndex]
+        self.addChild(vc)
+        vc.view.frame = self.containerView.bounds
+        self.containerView.addSubview(vc.view)
+        vc.didMove(toParent: self)
     }
     
 }
