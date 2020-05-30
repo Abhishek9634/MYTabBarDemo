@@ -19,14 +19,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPH-WF-bP0">
                             <rect key="frame" x="15" y="10" width="69" height="70"/>
                             <subviews>
-                                <label opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5M-hn-2oS">
-                                    <rect key="frame" x="39" y="27" width="20" height="16.5"/>
+                                <label opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5M-hn-2oS">
+                                    <rect key="frame" x="38" y="27" width="21" height="16.5"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZBs-qa-BYN">
-                                    <rect key="frame" x="13" y="25" width="18" height="19.5"/>
+                                    <rect key="frame" x="15" y="25" width="18" height="19.5"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="18" id="75x-Yr-cun"/>
                                         <constraint firstAttribute="width" constant="18" id="XCr-Dp-RWM"/>
@@ -36,11 +36,11 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="b5M-hn-2oS" firstAttribute="centerY" secondItem="yPH-WF-bP0" secondAttribute="centerY" id="FJs-qH-ciY"/>
-                                <constraint firstItem="ZBs-qa-BYN" firstAttribute="leading" secondItem="yPH-WF-bP0" secondAttribute="leading" constant="13" id="Fpa-HY-xFE"/>
+                                <constraint firstItem="ZBs-qa-BYN" firstAttribute="leading" secondItem="yPH-WF-bP0" secondAttribute="leading" constant="15" id="Fpa-HY-xFE"/>
                                 <constraint firstAttribute="trailing" secondItem="b5M-hn-2oS" secondAttribute="trailing" constant="10" id="UAS-EK-fdo"/>
                                 <constraint firstItem="b5M-hn-2oS" firstAttribute="centerY" secondItem="ZBs-qa-BYN" secondAttribute="centerY" id="eG7-iZ-A2b"/>
                                 <constraint firstItem="ZBs-qa-BYN" firstAttribute="centerY" secondItem="yPH-WF-bP0" secondAttribute="centerY" id="fVB-ME-rl4"/>
-                                <constraint firstItem="b5M-hn-2oS" firstAttribute="leading" secondItem="ZBs-qa-BYN" secondAttribute="trailing" constant="8" id="p6j-6n-f2K"/>
+                                <constraint firstItem="b5M-hn-2oS" firstAttribute="leading" secondItem="ZBs-qa-BYN" secondAttribute="trailing" constant="5" id="p6j-6n-f2K"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
