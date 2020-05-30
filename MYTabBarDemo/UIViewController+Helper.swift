@@ -10,10 +10,10 @@ import UIKit
 
 extension UIViewController {
     
-    var rootVC: RootTabViewController? {
+    var rootVC: RootStackTabViewController? {
         var selfVC = self
         while let parentVC = selfVC.parent {
-            if let vc = parentVC as? RootTabViewController {
+            if let vc = parentVC as? RootStackTabViewController {
                 return vc
             } else {
                 selfVC = parentVC
