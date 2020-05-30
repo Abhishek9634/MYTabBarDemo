@@ -19,8 +19,8 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPH-WF-bP0">
                             <rect key="frame" x="0.0" y="10" width="99" height="70"/>
                             <subviews>
-                                <label opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5M-hn-2oS">
-                                    <rect key="frame" x="46" y="35" width="43" height="0.0"/>
+                                <label opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5M-hn-2oS">
+                                    <rect key="frame" x="46" y="27" width="33" height="16.5"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                             <constraints>
                                 <constraint firstItem="b5M-hn-2oS" firstAttribute="centerY" secondItem="yPH-WF-bP0" secondAttribute="centerY" id="FJs-qH-ciY"/>
                                 <constraint firstItem="ZBs-qa-BYN" firstAttribute="leading" secondItem="yPH-WF-bP0" secondAttribute="leading" constant="20" id="Fpa-HY-xFE"/>
-                                <constraint firstAttribute="trailing" secondItem="b5M-hn-2oS" secondAttribute="trailing" constant="10" id="UAS-EK-fdo"/>
+                                <constraint firstAttribute="trailing" secondItem="b5M-hn-2oS" secondAttribute="trailing" constant="20" id="UAS-EK-fdo"/>
                                 <constraint firstItem="b5M-hn-2oS" firstAttribute="centerY" secondItem="ZBs-qa-BYN" secondAttribute="centerY" id="eG7-iZ-A2b"/>
                                 <constraint firstItem="ZBs-qa-BYN" firstAttribute="centerY" secondItem="yPH-WF-bP0" secondAttribute="centerY" id="fVB-ME-rl4"/>
                                 <constraint firstItem="b5M-hn-2oS" firstAttribute="leading" secondItem="ZBs-qa-BYN" secondAttribute="trailing" constant="8" id="p6j-6n-f2K"/>
