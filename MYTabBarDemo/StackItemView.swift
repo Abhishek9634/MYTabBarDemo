@@ -51,11 +51,6 @@ class StackItemView: UIView {
         self.isSelected = model.isSelected
     }
     
-    override func layoutSubviews() {
-        self.titleLabel.sizeToFit()
-        self.layoutIfNeeded()
-    }
-    
     private func updateUI(isSelected: Bool) {
         guard let model = item as? BottomStackItem else { return }
         model.isSelected = isSelected
@@ -67,9 +62,10 @@ class StackItemView: UIView {
                        initialSpringVelocity: 0.5,
                        options: options,
                        animations: {
-            self.titleLabel.isHidden = !isSelected
+            self.titleLabel.text = isSelected ? model.title : ""
             let color: UIColor = isSelected ? .red : .white
             self.highlightView.backgroundColor = color
+            (self.superview as? UIStackView)?.layoutIfNeeded()
         }, completion: nil)
     }
     
