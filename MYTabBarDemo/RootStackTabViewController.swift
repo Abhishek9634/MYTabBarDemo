@@ -39,8 +39,9 @@ class RootStackTabViewController: UIViewController {
     func setupTabs() {
         for (index, model) in self.tabModels.enumerated() {
             let tabView = self.tabs[index]
-            tabView.delegate = self
+            model.isSelected = index == 0
             tabView.item = model
+            tabView.delegate = self
             self.bottomStack.addArrangedSubview(tabView)
         }
     }
