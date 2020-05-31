@@ -20,16 +20,16 @@
                             <rect key="frame" x="15" y="10" width="69" height="70"/>
                             <subviews>
                                 <label opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5M-hn-2oS">
-                                    <rect key="frame" x="38" y="27" width="21" height="16.5"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <rect key="frame" x="40" y="25.5" width="19" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZBs-qa-BYN">
-                                    <rect key="frame" x="15" y="25" width="18" height="19.5"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZBs-qa-BYN">
+                                    <rect key="frame" x="15" y="22" width="20" height="25.5"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="18" id="75x-Yr-cun"/>
-                                        <constraint firstAttribute="width" constant="18" id="XCr-Dp-RWM"/>
+                                        <constraint firstAttribute="height" constant="24" id="75x-Yr-cun"/>
+                                        <constraint firstAttribute="width" constant="20" id="XCr-Dp-RWM"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
@@ -70,6 +70,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="highlightView" destination="yPH-WF-bP0" id="byA-Co-P7L"/>
+                <outlet property="imgView" destination="ZBs-qa-BYN" id="BGQ-nV-UOE"/>
                 <outlet property="titleLabel" destination="b5M-hn-2oS" id="M3g-Ys-bet"/>
             </connections>
             <point key="canvasLocation" x="-90.579710144927546" y="422.54464285714283"/>

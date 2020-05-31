@@ -24,10 +24,10 @@ class RootStackTabViewController: UIViewController {
     
     lazy var tabModels: [BottomStackItem] = {
         return [
-            BottomStackItem(title: "Home"),
-            BottomStackItem(title: "Favourite"),
-            BottomStackItem(title: "Search"),
-            BottomStackItem(title: "Profile")
+            BottomStackItem(title: "Home", image: "home"),
+            BottomStackItem(title: "Favourite", image: "heart"),
+            BottomStackItem(title: "Search", image: "search"),
+            BottomStackItem(title: "Profile", image: "user")
         ]
     }()
     

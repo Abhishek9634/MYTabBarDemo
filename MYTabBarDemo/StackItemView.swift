@@ -16,7 +16,10 @@ protocol StackItemViewDelegate: class {
 class StackItemView: UIView {
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var highlightView: UIView!
+    
+    private let higlightBGColor = UIColor(hexString: "ffc04d")
     
     static var newInstance: StackItemView {
         return Bundle.main.loadNibNamed(
@@ -48,6 +51,7 @@ class StackItemView: UIView {
     private func configure(_ item: Any?) {
         guard let model = item as? BottomStackItem else { return }
         self.titleLabel.text = model.title
+        self.imgView.image = UIImage(named: model.image)
         self.isSelected = model.isSelected
     }
     
@@ -63,7 +67,7 @@ class StackItemView: UIView {
                        options: options,
                        animations: {
             self.titleLabel.text = isSelected ? model.title : ""
-            let color: UIColor = isSelected ? .red : .white
+            let color = isSelected ? self.higlightBGColor : .white
             self.highlightView.backgroundColor = color
             (self.superview as? UIStackView)?.layoutIfNeeded()
         }, completion: nil)
