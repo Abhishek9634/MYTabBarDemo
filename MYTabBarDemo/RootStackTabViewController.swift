@@ -16,7 +16,7 @@ class RootStackTabViewController: UIViewController {
     
     lazy var tabs: [StackItemView] = {
         var items = [StackItemView]()
-        for _ in 0..<4 {
+        for _ in 0..<5 {
             items.append(StackItemView.newInstance)
         }
         return items
@@ -27,7 +27,8 @@ class RootStackTabViewController: UIViewController {
             BottomStackItem(title: "Home", image: "home"),
             BottomStackItem(title: "Likes", image: "heart"),
             BottomStackItem(title: "Search", image: "search"),
-            BottomStackItem(title: "Profile", image: "user")
+            BottomStackItem(title: "Profile", image: "user"),
+            BottomStackItem(title: "Settings", image: "settings")
         ]
     }()
     

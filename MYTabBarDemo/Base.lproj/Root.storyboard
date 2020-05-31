@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ka-6o-4SU">
-                                <rect key="frame" x="0.0" y="814" width="414" height="82"/>
+                                <rect key="frame" x="0.0" y="798" width="414" height="98"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="W7j-oK-fHo">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                        <rect key="frame" x="15" y="0.0" width="384" height="64"/>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="W7j-oK-fHo" firstAttribute="bottom" secondItem="Udt-P2-GRf" secondAttribute="bottom" id="IDt-AX-5bt"/>
-                                    <constraint firstItem="W7j-oK-fHo" firstAttribute="leading" secondItem="Udt-P2-GRf" secondAttribute="leading" id="K72-tD-GHo"/>
-                                    <constraint firstItem="Udt-P2-GRf" firstAttribute="trailing" secondItem="W7j-oK-fHo" secondAttribute="trailing" id="nNM-SU-Vfo"/>
+                                    <constraint firstItem="W7j-oK-fHo" firstAttribute="leading" secondItem="Udt-P2-GRf" secondAttribute="leading" constant="15" id="K72-tD-GHo"/>
+                                    <constraint firstItem="Udt-P2-GRf" firstAttribute="trailing" secondItem="W7j-oK-fHo" secondAttribute="trailing" constant="15" id="nNM-SU-Vfo"/>
                                     <constraint firstItem="W7j-oK-fHo" firstAttribute="top" secondItem="Udt-P2-GRf" secondAttribute="top" id="uZ1-bv-deB"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="Udt-P2-GRf"/>
@@ -37,7 +37,7 @@
                         <constraints>
                             <constraint firstItem="1Ka-6o-4SU" firstAttribute="trailing" secondItem="6VK-Sy-Qmc" secondAttribute="trailing" id="3pN-X3-Ypx"/>
                             <constraint firstAttribute="bottom" secondItem="1Ka-6o-4SU" secondAttribute="bottom" id="F7x-uh-mbI"/>
-                            <constraint firstItem="1Ka-6o-4SU" firstAttribute="height" secondItem="6VK-Sy-Qmc" secondAttribute="height" multiplier="0.1" id="KxS-5q-rZ0"/>
+                            <constraint firstItem="1Ka-6o-4SU" firstAttribute="height" secondItem="6VK-Sy-Qmc" secondAttribute="height" multiplier="0.12" id="KxS-5q-rZ0"/>
                             <constraint firstItem="1Ka-6o-4SU" firstAttribute="leading" secondItem="6VK-Sy-Qmc" secondAttribute="leading" id="bIe-NA-g7T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6VK-Sy-Qmc"/>
